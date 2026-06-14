@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Mahalaxmi Jewellers Nagpur - Premium Gold, Diamond & Bridal Jewellery. Trusted since 1985. Explore our exquisite collection of traditional and contemporary jewellery."/>
+<meta name="keywords" content="jewellers nagpur, gold jewellery nagpur, diamond jewellery, bridal jewellery nagpur, mahalaxmi jewellers"/>
+<meta property="og:title" content="Mahalaxmi Jewellers - Nagpur's Finest Jewellery"/>
+<meta property="og:description" content="Premium Gold, Diamond & Bridal Jewellery in Nagpur. Trusted since 1985."/>
+<title>Mahalaxmi Jewellers - Nagpur's Finest Jewellery Since 1985</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+--gold:#C9A84C;
+--gold-light:#E8C97A;
+--gold-deep:#9A7A3A;
+--gold-pale:#F5E6C0;
+--ivory:#FAF7F0;
+--champagne:#F2E6CC;
+--black:#0A0A0A;
+--charcoal:#1A1A1A;
+--warm-white:#FFFDF7;
+--text-dark:#1C1C1C;
+--text-muted:#6B6B6B;
+--glass-bg:rgba(255,253,247,0.08);
+--glass-border:rgba(201,168,76,0.25);
+--transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+[data-theme="dark"]{
+--ivory:#0D0D0D;
+--warm-white:#111111;
+--text-dark:#F5E6C0;
+--text-muted:#B0A080;
+--glass-bg:rgba(0,0,0,0.4);
+--glass-border:rgba(201,168,76,0.3);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Montserrat',sans-serif;background:var(--ivory);color:var(--text-dark);overflow-x:hidden;transition:background 0.4s,color 0.4s;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--charcoal);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px;}
+
+/* GOLD TICKER */
+#gold-ticker{background:linear-gradient(90deg,var(--charcoal),#2a2410,var(--charcoal));padding:10px 0;overflow:hidden;position:relative;z-index:1000;}
+.ticker-content{display:flex;align-items:center;white-space:nowrap;animation:tickerMove 30s linear infinite;}
+.ticker-item{font-family:'Montserrat',sans-serif;font-size:12px;color:var(--gold-light);font-weight:500;padding:0 40px;letter-spacing:1px;}
+.ticker-item span{color:#fff;margin-left:8px;}
+.ticker-divider{color:var(--gold);opacity:0.5;font-size:18px;}
+@keyframes tickerMove{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* NAVBAR */
+nav{position:fixed;top:40px;left:0;width:100%;z-index:999;transition:var(--transition);}
+nav.scrolled{top:0;background:rgba(10,10,10,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);box-shadow:0 4px 30px rgba(0,0,0,0.3);}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;}
+.logo-wrap{display:flex;flex-direction:column;align-items:center;}
+.logo-text{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:#fff;letter-spacing:3px;text-decoration:none;line-height:1;}
+.logo-sub{font-size:9px;color:var(--gold);letter-spacing:4px;font-weight:500;margin-top:3px;text-transform:uppercase;}
+.nav-links{display:flex;gap:36px;list-style:none;align-items:center;}
+.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:var(--transition);position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:var(--transition);}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-links a:hover::after{width:100%;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.btn-book{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border:none;padding:10px 24px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition);text-decoration:none;}
+.btn-book:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.4);}
+.theme-toggle{background:transparent;border:1px solid rgba(201,168,76,0.4);color:var(--gold);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px;transition:var(--transition);display:flex;align-items:center;justify-content:center;}
+.theme-toggle:hover{background:var(--gold);color:#000;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+.hamburger span{width:24px;height:1.5px;background:var(--gold);transition:var(--transition);}
+
+/* FESTIVAL BANNER */
+.festival-banner{background:linear-gradient(135deg,#4a0e00,#8B1A00,#C9390A,#8B1A00,#4a0e00);padding:14px 40px;text-align:center;position:relative;overflow:hidden;margin-top:90px;}
+.festival-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='1.5' fill='rgba(255,215,0,0.2)'/%3E%3C/svg%3E");}
+.festival-text{font-family:'Cormorant Garamond',serif;font-size:17px;color:#fff;font-style:italic;position:relative;z-index:1;}
+.festival-text strong{color:#FFD700;font-style:normal;}
+.festival-badge{display:inline-block;background:#FFD700;color:#000;font-size:10px;font-weight:700;letter-spacing:2px;padding:3px 12px;border-radius:20px;margin-right:12px;vertical-align:middle;}
+
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;background:#0A0A0A;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+  radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.08) 0%, transparent 50%),
+  linear-gradient(135deg,#050505 0%,#111108 50%,#050505 100%);}
+.particles-canvas{position:absolute;inset:0;pointer-events:none;}
+.hero-content{max-width:1400px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:2;width:100%;}
+.hero-left{animation:fadeSlideUp 1s ease forwards;}
+.hero-eyebrow{font-size:11px;color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-weight:500;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.hero-eyebrow::before{content:'';width:40px;height:1px;background:var(--gold);}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,6vw,90px);font-weight:300;color:#fff;line-height:1.05;margin-bottom:12px;}
+.hero-title em{color:var(--gold-light);font-style:italic;}
+.hero-title strong{font-weight:600;}
+.hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:20px;color:rgba(255,255,255,0.5);font-style:italic;margin-bottom:32px;font-weight:300;}
+.hero-desc{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.8;max-width:480px;margin-bottom:48px;font-weight:300;}
+.hero-ctas{display:flex;gap:20px;flex-wrap:wrap;}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border:none;padding:16px 40px;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition);text-decoration:none;display:inline-block;}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(201,168,76,0.5);}
+.btn-outline{background:transparent;color:var(--gold-light);border:1px solid rgba(201,168,76,0.5);padding:16px 40px;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition);text-decoration:none;display:inline-block;}
+.btn-outline:hover{background:rgba(201,168,76,0.1);border-color:var(--gold);transform:translateY(-3px);}
+.hero-stats{display:flex;gap:48px;margin-top:60px;padding-top:40px;border-top:1px solid rgba(201,168,76,0.15);}
+.stat-item{text-align:left;}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:var(--gold-light);line-height:1;}
+.stat-label{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
+.hero-right{position:relative;display:flex;justify-content:center;align-items:center;}
+.hero-img-frame{position:relative;width:520px;height:620px;}
+.hero-img-main{width:380px;height:500px;object-fit:cover;border-radius:4px;position:absolute;top:0;right:0;border:1px solid rgba(201,168,76,0.3);}
+.hero-img-accent{width:220px;height:280px;object-fit:cover;border-radius:4px;position:absolute;bottom:0;left:0;border:2px solid rgba(201,168,76,0.4);box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.hero-glow{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.2),transparent);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(40px);animation:goldPulse 4s ease-in-out infinite;}
+@keyframes goldPulse{0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1);}50%{opacity:1;transform:translate(-50%,-50%) scale(1.2);}}
+@keyframes fadeSlideUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
+.scroll-hint{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:2;}
+.scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite;}
+.scroll-text{font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:3px;text-transform:uppercase;}
+@keyframes scrollPulse{0%,100%{opacity:0.3;}50%{opacity:1;}}
+
+/* SECTION DEFAULTS */
+.section{padding:100px 40px;}
+.section-inner{max-width:1400px;margin:0 auto;}
+.section-header{text-align:center;margin-bottom:72px;}
+.section-eyebrow{font-size:11px;color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-weight:500;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:16px;}
+.section-eyebrow::before,.section-eyebrow::after{content:'';width:40px;height:1px;background:var(--gold);}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,56px);font-weight:400;color:var(--text-dark);line-height:1.2;margin-bottom:20px;}
+.section-desc{font-size:15px;color:var(--text-muted);line-height:1.8;max-width:600px;margin:0 auto;}
+.divider-gold{width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto;}
+
+/* ABOUT */
+.about-section{background:var(--warm-white);position:relative;overflow:hidden;}
+.about-section::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.06),transparent);pointer-events:none;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.about-img-collage{position:relative;height:600px;}
+.about-img-1{width:300px;height:380px;object-fit:cover;position:absolute;top:0;left:0;border-radius:4px;border:1px solid rgba(201,168,76,0.2);}
+.about-img-2{width:240px;height:300px;object-fit:cover;position:absolute;bottom:0;right:0;border-radius:4px;border:2px solid var(--gold);box-shadow:0 20px 60px rgba(0,0,0,0.15);}
+.about-badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:linear-gradient(135deg,var(--gold),var(--gold-deep));width:110px;height:110px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 12px 40px rgba(201,168,76,0.4);z-index:2;}
+.about-badge-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:#fff;line-height:1;}
+.about-badge-text{font-size:9px;color:rgba(255,255,255,0.8);letter-spacing:2px;text-transform:uppercase;}
+.about-content .section-title{text-align:left;}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;}
+.feature-card{padding:24px;background:var(--ivory);border:1px solid rgba(201,168,76,0.15);border-radius:4px;transition:var(--transition);}
+.feature-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.1);}
+.feature-icon{font-size:28px;margin-bottom:12px;}
+.feature-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--text-dark);margin-bottom:6px;}
+.feature-desc{font-size:13px;color:var(--text-muted);line-height:1.6;}
+
+/* CATEGORIES */
+.categories-section{background:var(--charcoal);position:relative;overflow:hidden;}
+.categories-section .section-title{color:#fff;}
+.categories-section .section-desc{color:rgba(255,255,255,0.5);}
+.categories-section .section-eyebrow{color:var(--gold);}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.cat-card{position:relative;height:360px;overflow:hidden;border-radius:4px;cursor:pointer;group:true;}
+.cat-card.large{grid-row:span 2;height:100%;}
+.cat-img{width:100%;height:100%;object-fit:cover;transition:transform 0.7s ease;}
+.cat-card:hover .cat-img{transform:scale(1.08);}
+.cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.3) 50%,transparent 100%);transition:var(--transition);}
+.cat-card:hover .cat-overlay{background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 60%,rgba(201,168,76,0.1) 100%);}
+.cat-info{position:absolute;bottom:0;left:0;right:0;padding:32px 28px;}
+.cat-label{font-size:10px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
+.cat-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:#fff;margin-bottom:8px;}
+.cat-desc{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:16px;}
+.cat-link{font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;transition:var(--transition);}
+.cat-link:hover{gap:16px;color:var(--gold-light);}
+.cat-border{position:absolute;inset:0;border:1px solid transparent;border-radius:4px;transition:var(--transition);}
+.cat-card:hover .cat-border{border-color:rgba(201,168,76,0.4);}
+
+/* GALLERY */
+.gallery-section{background:var(--ivory);}
+.gallery-filters{display:flex;justify-content:center;gap:8px;margin-bottom:48px;flex-wrap:wrap;}
+.filter-btn{background:transparent;border:1px solid rgba(201,168,76,0.3);color:var(--text-muted);padding:10px 24px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition);}
+.filter-btn.active,.filter-btn:hover{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border-color:transparent;box-shadow:0 6px 20px rgba(201,168,76,0.3);}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.gallery-item{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:1;cursor:pointer;}
+.gallery-item.tall{aspect-ratio:1/1.5;}
+.gallery-img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;}
+.gallery-item:hover .gallery-img{transform:scale(1.1);}
+.gallery-hover{position:absolute;inset:0;background:rgba(0,0,0,0.6);opacity:0;display:flex;align-items:center;justify-content:center;transition:var(--transition);}
+.gallery-item:hover .gallery-hover{opacity:1;}
+.gallery-icon{color:#fff;font-size:32px;}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;display:none;align-items:center;justify-content:center;}
+.lightbox.active{display:flex;}
+.lightbox-img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;border:1px solid rgba(201,168,76,0.3);}
+.lightbox-close{position:absolute;top:24px;right:32px;color:#fff;font-size:36px;cursor:pointer;transition:var(--transition);}
+.lightbox-close:hover{color:var(--gold);}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(201,168,76,0.2);border:1px solid var(--gold);color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;transition:var(--transition);}
+.lightbox-nav:hover{background:var(--gold);color:#000;}
+.lightbox-prev{left:24px;}
+.lightbox-next{right:24px;}
+
+/* TESTIMONIALS */
+.testimonials-section{background:var(--warm-white);position:relative;overflow:hidden;}
+.testimonials-section::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(201,168,76,0.08)'/%3E%3C/svg%3E");}
+.testimonials-slider{position:relative;overflow:hidden;}
+.testimonials-track{display:flex;transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);}
+.testimonial-slide{flex:0 0 100%;padding:0 40px;}
+.testimonial-card{max-width:800px;margin:0 auto;text-align:center;padding:60px 60px;background:var(--ivory);border:1px solid rgba(201,168,76,0.15);border-radius:8px;position:relative;}
+.testimonial-card::before{content:'❝';position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:80px;color:var(--gold);opacity:0.2;font-family:'Cormorant Garamond',serif;line-height:1;}
+.testimonial-text{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:var(--text-dark);line-height:1.7;margin-bottom:32px;font-weight:400;}
+.testimonial-author{display:flex;align-items:center;justify-content:center;gap:16px;}
+.author-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;}
+.author-info{text-align:left;}
+.author-name{font-weight:600;font-size:15px;color:var(--text-dark);margin-bottom:2px;}
+.author-location{font-size:12px;color:var(--text-muted);letter-spacing:1px;}
+.stars{color:var(--gold);font-size:14px;margin-bottom:4px;}
+.slider-dots{display:flex;justify-content:center;gap:12px;margin-top:40px;}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,0.3);cursor:pointer;transition:var(--transition);}
+.dot.active{background:var(--gold);width:24px;border-radius:4px;}
+.slider-arrows{display:flex;justify-content:center;gap:16px;margin-top:24px;}
+.slider-arrow{background:transparent;border:1px solid rgba(201,168,76,0.4);color:var(--gold);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:18px;transition:var(--transition);display:flex;align-items:center;justify-content:center;}
+.slider-arrow:hover{background:var(--gold);color:#000;}
+
+/* APPOINTMENT */
+.appointment-section{background:linear-gradient(135deg,#0A0A0A 0%,#1a1508 50%,#0A0A0A 100%);position:relative;overflow:hidden;}
+.appointment-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,0.15),transparent 70%);}
+.appointment-section .section-title{color:#fff;}
+.appointment-section .section-desc{color:rgba(255,255,255,0.5);}
+.appointment-section .section-eyebrow{color:var(--gold);}
+.appt-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.appt-form{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:8px;padding:48px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.form-group{margin-bottom:24px;}
+.form-group label{display:block;font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;font-weight:500;}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.2);border-radius:4px;padding:14px 18px;color:#fff;font-family:'Montserrat',sans-serif;font-size:14px;transition:var(--transition);}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.3);}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--gold);background:rgba(201,168,76,0.05);}
+.form-group select option{background:#1a1a1a;color:#fff;}
+.form-group textarea{resize:vertical;min-height:100px;}
+.appt-info{padding:20px 0;}
+.appt-info-title{font-family:'Cormorant Garamond',serif;font-size:36px;color:#fff;margin-bottom:24px;font-weight:400;}
+.appt-info-desc{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:40px;}
+.appt-features{display:flex;flex-direction:column;gap:20px;}
+.appt-feature{display:flex;align-items:flex-start;gap:16px;}
+.appt-feature-icon{width:44px;height:44px;border-radius:50%;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.appt-feature-text{flex:1;}
+.appt-feature-text h4{font-size:14px;font-weight:600;color:#fff;margin-bottom:4px;}
+.appt-feature-text p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.5;}
+
+/* CONTACT */
+.contact-section{background:var(--ivory);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
+.contact-form{background:var(--warm-white);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:48px;}
+.contact-form .form-group label{color:var(--gold);}
+.contact-form .form-group input,.contact-form .form-group select,.contact-form .form-group textarea{background:var(--ivory);border:1px solid rgba(201,168,76,0.2);color:var(--text-dark);}
+.contact-form .form-group input::placeholder,.contact-form .form-group textarea::placeholder{color:var(--text-muted);}
+.contact-form .form-group input:focus,.contact-form .form-group textarea:focus{border-color:var(--gold);}
+.contact-info{display:flex;flex-direction:column;gap:32px;}
+.contact-info-item{display:flex;align-items:flex-start;gap:20px;}
+.contact-info-icon{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(201,168,76,0.05));border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.contact-info-text h4{font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:4px;}
+.contact-info-text p,.contact-info-text a{font-size:14px;color:var(--text-muted);text-decoration:none;line-height:1.7;}
+.contact-info-text a:hover{color:var(--gold);}
+.map-wrap{border-radius:8px;overflow:hidden;border:1px solid rgba(201,168,76,0.2);height:280px;margin-top:32px;}
+.map-wrap iframe{width:100%;height:100%;border:none;}
+.instagram-section{background:var(--charcoal);}
+.instagram-section .section-title{color:#fff;}
+.instagram-section .section-eyebrow{color:var(--gold);}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;}
+.insta-item{aspect-ratio:1;overflow:hidden;position:relative;cursor:pointer;}
+.insta-img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
+.insta-item:hover .insta-img{transform:scale(1.1);}
+.insta-overlay{position:absolute;inset:0;background:rgba(201,168,76,0.7);opacity:0;display:flex;align-items:center;justify-content:center;transition:var(--transition);gap:16px;}
+.insta-item:hover .insta-overlay{opacity:1;}
+.insta-meta{color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;gap:4px;}
+.insta-follow{text-align:center;margin-top:40px;}
+.insta-handle{font-family:'Cormorant Garamond',serif;font-size:20px;color:rgba(255,255,255,0.6);font-style:italic;margin-bottom:16px;}
+
+/* WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:100px;right:32px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 30px rgba(37,211,102,0.4);z-index:9998;text-decoration:none;transition:var(--transition);}
+.whatsapp-btn:hover{transform:scale(1.1) translateY(-4px);box-shadow:0 16px 40px rgba(37,211,102,0.5);}
+.whatsapp-tooltip{position:absolute;right:70px;white-space:nowrap;background:#fff;color:#333;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;box-shadow:0 4px 20px rgba(0,0,0,0.15);opacity:0;transition:var(--transition);}
+.whatsapp-btn:hover .whatsapp-tooltip{opacity:1;}
+
+/* SCROLL TO TOP */
+.scroll-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border:none;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(201,168,76,0.4);z-index:9997;opacity:0;transform:translateY(20px);transition:var(--transition);}
+.scroll-top.visible{opacity:1;transform:translateY(0);}
+.scroll-top:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(201,168,76,0.6);}
+
+/* FOOTER */
+footer{background:#050505;color:rgba(255,255,255,0.6);padding:80px 40px 32px;}
+.footer-inner{max-width:1400px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px;}
+.footer-brand .logo-text{font-size:28px;display:block;margin-bottom:8px;}
+.footer-brand .logo-sub{display:block;margin-bottom:20px;}
+.footer-brand p{font-size:13px;line-height:1.8;color:rgba(255,255,255,0.45);max-width:280px;margin-bottom:24px;}
+.social-links{display:flex;gap:12px;}
+.social-link{width:40px;height:40px;border-radius:50%;border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;color:var(--gold);text-decoration:none;font-size:16px;transition:var(--transition);}
+.social-link:hover{background:var(--gold);color:#000;border-color:var(--gold);}
+.footer-col h4{font-size:11px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;font-weight:600;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.footer-col ul li a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;transition:var(--transition);}
+.footer-col ul li a:hover{color:var(--gold-light);padding-left:6px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.3);}
+.footer-bottom a{color:var(--gold);text-decoration:none;}
+.certifications{display:flex;gap:16px;align-items:center;}
+.cert-badge{background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);color:var(--gold);font-size:10px;font-weight:600;letter-spacing:1px;padding:6px 14px;border-radius:20px;}
+
+/* GLASS CARD */
+.glass-card{background:var(--glass-bg);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;}
+
+/* COUNTER */
+.counter{display:inline-block;}
+
+/* MOBILE NAV */
+.mobile-nav{position:fixed;inset:0;background:#050505;z-index:9996;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(100%);transition:transform 0.5s cubic-bezier(0.77,0,0.175,1);}
+.mobile-nav.open{transform:translateX(0);}
+.mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:36px;color:#fff;text-decoration:none;font-weight:300;letter-spacing:2px;transition:var(--transition);}
+.mobile-nav a:hover{color:var(--gold);}
+.mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;}
+
+/* ANIMATIONS */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+@media(max-width:1100px){
+.hero-content{grid-template-columns:1fr;gap:40px;text-align:center;}
+.hero-left{animation:none;opacity:1;transform:none;}
+.hero-desc{margin:0 auto 48px;}
+.hero-ctas{justify-content:center;}
+.hero-stats{justify-content:center;}
+.hero-right{display:none;}
+.about-grid,.appt-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
+.footer-top{grid-template-columns:1fr 1fr;gap:40px;}
+.cat-grid{grid-template-columns:1fr 1fr;}
+.cat-card.large{grid-row:auto;}
+.gallery-grid{grid-template-columns:repeat(3,1fr);}
+.insta-grid{grid-template-columns:repeat(4,1fr);}
+.nav-links,.nav-right .btn-book{display:none;}
+.hamburger{display:flex;}
+}
+@media(max-width:768px){
+.section{padding:64px 20px;}
+.nav-inner{padding:16px 20px;}
+.hero-title{font-size:clamp(40px,10vw,60px);}
+.gallery-grid{grid-template-columns:repeat(2,1fr);}
+.insta-grid{grid-template-columns:repeat(3,1fr);}
+.cat-grid{grid-template-columns:1fr;}
+.form-row{grid-template-columns:1fr;}
+.footer-top{grid-template-columns:1fr;}
+.festival-banner{margin-top:0;}
+.appt-form{padding:28px 20px;}
+.testimonial-card{padding:36px 28px;}
+.hero-stats{gap:24px;}
+.stat-num{font-size:28px;}
+}
+</style>
+</head>
+<body>
+
+<!-- GOLD RATE TICKER -->
+<div id="gold-ticker">
+  <div class="ticker-content" id="ticker">
+    <span class="ticker-item">🪙 Today's Gold Rate – Nagpur</span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">22 Karat Gold<span id="rate22">₹6,842/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">24 Karat Gold<span id="rate24">₹7,460/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">18 Karat Gold<span>₹5,595/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">Silver<span>₹96/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">📅 Updated: <span id="rate-date"></span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">🪙 Today's Gold Rate – Nagpur</span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">22 Karat Gold<span>₹6,842/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">24 Karat Gold<span>₹7,460/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">18 Karat Gold<span>₹5,595/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">Silver<span>₹96/gm</span></span>
+    <span class="ticker-divider">|</span>
+    <span class="ticker-item">📅 Updated: <span id="rate-date2"></span></span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo-wrap">
+      <span class="logo-text">MAHALAXMI</span>
+      <span class="logo-sub">Jewellers · Est. 1985 · Nagpur</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">☀️</button>
+      <a href="#appointment" class="btn-book">Book Visit</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#about" onclick="closeMob()">About Us</a>
+  <a href="#collections" onclick="closeMob()">Collections</a>
+  <a href="#gallery" onclick="closeMob()">Gallery</a>
+  <a href="#testimonials" onclick="closeMob()">Reviews</a>
+  <a href="#appointment" onclick="closeMob()">Book Visit</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- FESTIVAL BANNER -->
+<div class="festival-banner">
+  <p class="festival-text">
+    <span class="festival-badge">✨ Offer</span>
+    <strong>Akshaya Tritiya Special</strong> — Making charges waived on all Gold jewellery this season.
+    <strong>Bridal packages</strong> starting ₹1.5L · Limited slots available
+  </p>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Since 1985 · Nagpur's Finest</div>
+      <h1 class="hero-title">
+        Where Gold<br>Meets <em>Artistry</em><br>&amp; <strong>Legacy</strong>
+      </h1>
+      <p class="hero-subtitle">Crafting heirlooms for generations</p>
+      <p class="hero-desc">From the heart of Nagpur, Mahalaxmi Jewellers brings you an unmatched collection of handcrafted gold, diamond, and bridal jewellery — where every piece tells a story of love, tradition, and timeless elegance.</p>
+      <div class="hero-ctas">
+        <a href="#collections" class="btn-primary">Explore Collections</a>
+        <a href="#appointment" class="btn-outline">Book Appointment</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="38">0</span>+</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="50">0</span>K+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="10">0</span>K+</div>
+          <div class="stat-label">Unique Designs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label">BIS Hallmarked</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-frame">
+        <div class="hero-glow"></div>
+        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=760&q=80" alt="Bridal Gold Jewellery" class="hero-img-main" loading="eager"/>
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=440&q=80" alt="Diamond Jewellery" class="hero-img-accent" loading="eager"/>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-collage fade-in">
+        <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?w=600&q=80" alt="Jewellery craftsmanship" class="about-img-1"/>
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=480&q=80" alt="Gold jewellery" class="about-img-2"/>
+        <div class="about-badge">
+          <div class="about-badge-num">38</div>
+          <div class="about-badge-text">Years of Trust</div>
+        </div>
+      </div>
+      <div class="about-content fade-in">
+        <div class="section-eyebrow">Our Legacy</div>
+        <h2 class="section-title">Craftsmanship Rooted in Tradition</h2>
+        <div class="divider-gold" style="margin:0 0 28px;"></div>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.9;margin-bottom:20px;">Founded in 1985 by Late Shri Rameshwardasji, Mahalaxmi Jewellers has been Nagpur's most trusted name in fine jewellery for over three decades. What began as a modest showroom on Sitabuldi has grown into a legacy that thousands of families have made part of their most cherished moments.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.9;margin-bottom:36px;">Every piece we create carries forward generations of craftsmanship — from intricate Kolhapuri designs to contemporary solitaire settings, our master karigars (artisans) pour their hearts into every gram of gold.</p>
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon">🏅</div>
+            <div class="feature-title">BIS Hallmarked</div>
+            <div class="feature-desc">All gold jewellery certified with BIS hallmark ensuring 100% purity</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💎</div>
+            <div class="feature-title">Certified Diamonds</div>
+            <div class="feature-desc">IGI & GIA certified diamonds with complete transparency</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <div class="feature-title">Easy Exchange</div>
+            <div class="feature-desc">Hassle-free old gold exchange at the best rates in Nagpur</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <div class="feature-title">Lifetime Warranty</div>
+            <div class="feature-desc">Free cleaning, polishing, and rhodium plating for life</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS / CATEGORIES -->
+<section class="categories-section section" id="collections">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Our Collections</div>
+      <h2 class="section-title" style="color:#fff;">Discover Every Occasion</h2>
+      <div class="divider-gold"></div>
+      <p class="section-desc">From the grandeur of bridal sets to the subtlety of everyday wear — crafted with the same devotion to perfection.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card large fade-in" style="height:744px;">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Bridal Collection" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">Featured</div>
+          <div class="cat-name">Bridal Collection</div>
+          <div class="cat-desc">Handcrafted bridal sets in 22K gold with Kundan, Polki, and Meenakari work — your dream bridal trousseau awaits.</div>
+          <a href="#gallery" class="cat-link">Explore Bridal →</a>
+        </div>
+      </div>
+      <div class="cat-card fade-in">
+        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&q=80" alt="Gold Jewellery" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">Classic</div>
+          <div class="cat-name">Gold Jewellery</div>
+          <div class="cat-desc">22K & 24K BIS hallmarked gold designs</div>
+          <a href="#gallery" class="cat-link">View Collection →</a>
+        </div>
+      </div>
+      <div class="cat-card fade-in">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Diamond Jewellery" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">Luxury</div>
+          <div class="cat-name">Diamond Collection</div>
+          <div class="cat-desc">IGI certified diamonds in solitaire and pave settings</div>
+          <a href="#gallery" class="cat-link">View Collection →</a>
+        </div>
+      </div>
+      <div class="cat-card fade-in">
+        <img src="https://images.unsplash.com/photo-1573408301185-9519f94816b5?w=600&q=80" alt="Traditional Jewellery" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">Heritage</div>
+          <div class="cat-name">Traditional Wear</div>
+          <div class="cat-desc">Temple jewellery, Kolhapuri Saaj &amp; festival sets</div>
+          <a href="#gallery" class="cat-link">View Collection →</a>
+        </div>
+      </div>
+      <div class="cat-card fade-in">
+        <img src="https://images.unsplash.com/photo-1631699815493-1e4e27e5ba96?w=600&q=80" alt="Daily Wear" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">Everyday</div>
+          <div class="cat-name">Daily Wear</div>
+          <div class="cat-desc">Lightweight gold &amp; silver for everyday elegance</div>
+          <a href="#gallery" class="cat-link">View Collection →</a>
+        </div>
+      </div>
+      <div class="cat-card fade-in">
+        <img src="https://images.unsplash.com/photo-1617142748310-37cf2bb68e9d?w=600&q=80" alt="Men's Collection" class="cat-img"/>
+        <div class="cat-overlay"></div>
+        <div class="cat-border"></div>
+        <div class="cat-info">
+          <div class="cat-label">For Him</div>
+          <div class="cat-name">Men's Collection</div>
+          <div class="cat-desc">Chains, rings, kadas &amp; cufflinks in gold &amp; platinum</div>
+          <a href="#gallery" class="cat-link">View Collection →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section section" id="gallery">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">The Collection</div>
+      <h2 class="section-title">A Glimpse of Elegance</h2>
+      <div class="divider-gold"></div>
+      <p class="section-desc">Each piece photographed to capture the true brilliance of our master craftsmanship</p>
+    </div>
+    <div class="gallery-filters fade-in">
+      <button class="filter-btn active" onclick="filterGallery(this,'all')">All</button>
+      <button class="filter-btn" onclick="filterGallery(this,'gold')">Gold</button>
+      <button class="filter-btn" onclick="filterGallery(this,'diamond')">Diamond</button>
+      <button class="filter-btn" onclick="filterGallery(this,'bridal')">Bridal</button>
+      <button class="filter-btn" onclick="filterGallery(this,'traditional')">Traditional</button>
+      <button class="filter-btn" onclick="filterGallery(this,'silver')">Silver</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-cat="gold" onclick="openLightbox(0)">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80" alt="Gold necklace" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item tall" data-cat="bridal" onclick="openLightbox(1)">
+        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&q=80" alt="Bridal set" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item" data-cat="diamond" onclick="openLightbox(2)">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Diamond ring" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item" data-cat="gold" onclick="openLightbox(3)">
+        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&q=80" alt="Gold bangles" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item" data-cat="traditional" onclick="openLightbox(4)">
+        <img src="https://images.unsplash.com/photo-1573408301185-9519f94816b5?w=600&q=80" alt="Traditional jewellery" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item tall" data-cat="bridal" onclick="openLightbox(5)">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Bridal necklace" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item" data-cat="silver" onclick="openLightbox(6)">
+        <img src="https://images.unsplash.com/photo-1631699815493-1e4e27e5ba96?w=600&q=80" alt="Silver jewellery" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+      <div class="gallery-item" data-cat="diamond" onclick="openLightbox(7)">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80" alt="Diamond necklace" class="gallery-img"/>
+        <div class="gallery-hover"><span class="gallery-icon">🔍</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="changeLightbox(-1)">‹</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Jewellery"/>
+  <button class="lightbox-nav lightbox-next" onclick="changeLightbox(1)">›</button>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section section" id="testimonials">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Voices of Trust</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="divider-gold"></div>
+    </div>
+    <div class="testimonials-slider fade-in">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"We bought our entire bridal trousseau from Mahalaxmi Jewellers and couldn't be happier. The quality of the 22K gold work and the attention to detail in the Kundan set was beyond our expectations. Their team spent hours helping us choose the perfect pieces without any pressure. Truly a trustworthy family jeweller."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P</div>
+              <div class="author-info">
+                <div class="stars" style="font-size:12px;">★★★★★</div>
+                <div class="author-name">Priya Sharma</div>
+                <div class="author-location">Dharampeth, Nagpur · Bridal Customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"I've been exchanging old gold and buying new jewellery from Mahalaxmi for over 15 years. The rates are the most transparent in Nagpur and the quality is always consistent. My mother started buying from them and now I bring my daughter. Three generations, one jeweller — that says everything."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div class="author-info">
+                <div class="stars" style="font-size:12px;">★★★★★</div>
+                <div class="author-name">Rekha Deshmukh</div>
+                <div class="author-location">Civil Lines, Nagpur · Loyal Customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Got my engagement ring customised here — a beautiful solitaire in 18K white gold. The team was so patient with us, explained every detail about the diamond's clarity and cut, and delivered exactly what we envisioned. The IGI certificate gave us complete peace of mind. Highly recommend for diamond purchases!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <div class="stars" style="font-size:12px;">★★★★★</div>
+                <div class="author-name">Amit &amp; Sneha Kulkarni</div>
+                <div class="author-location">Ramdaspeth, Nagpur · Diamond Customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Superb collection of men's jewellery — I bought a beautiful gold chain and a kada for my father's birthday. The staff understood exactly what I was looking for and the BIS hallmarking gave full confidence. The lifetime polishing offer is an excellent touch. A cut above other jewellers in Nagpur."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">V</div>
+              <div class="author-info">
+                <div class="stars" style="font-size:12px;">★★★★★</div>
+                <div class="author-name">Vijay Bhondrekar</div>
+                <div class="author-location">Sitabuldi, Nagpur · Men's Collection</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+      </div>
+      <div class="slider-arrows">
+        <button class="slider-arrow" onclick="prevSlide()">‹</button>
+        <button class="slider-arrow" onclick="nextSlide()">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment-section section" id="appointment">
+  <div class="section-inner">
+    <div class="appt-grid">
+      <div class="appt-info fade-in">
+        <div class="section-eyebrow" style="justify-content:flex-start;color:var(--gold);">Private Consultation</div>
+        <h2 class="appt-info-title">Experience Jewellery Like Never Before</h2>
+        <p class="appt-info-desc">Step into our exclusive appointment lounge and enjoy a personalised jewellery consultation with our expert team. No crowds, no rush — just you, your family, and the finest jewellery in Nagpur.</p>
+        <div class="appt-features">
+          <div class="appt-feature">
+            <div class="appt-feature-icon">🥂</div>
+            <div class="appt-feature-text">
+              <h4>Private Showroom Experience</h4>
+              <p>Dedicated consultation room with our senior jewellery advisor</p>
+            </div>
+          </div>
+          <div class="appt-feature">
+            <div class="appt-feature-icon">👗</div>
+            <div class="appt-feature-text">
+              <h4>Bridal Styling Assistance</h4>
+              <p>Our bridal experts help you coordinate jewellery with your trousseau</p>
+            </div>
+          </div>
+          <div class="appt-feature">
+            <div class="appt-feature-icon">⚙️</div>
+            <div class="appt-feature-text">
+              <h4>Custom Design Consultation</h4>
+              <p>Work with our master karigar to create your bespoke jewellery piece</p>
+            </div>
+          </div>
+          <div class="appt-feature">
+            <div class="appt-feature-icon">🎁</div>
+            <div class="appt-feature-text">
+              <h4>Complimentary Gift Wrapping</h4>
+              <p>Premium packaging and gift wrapping on every purchase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="appt-form fade-in">
+        <div style="margin-bottom:32px;">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#fff;font-weight:400;margin-bottom:8px;">Book Your Appointment</h3>
+          <p style="font-size:13px;color:rgba(255,255,255,0.45);">We'll confirm within 2 hours · Mon–Sun 10am–8pm</p>
+        </div>
+        <form onsubmit="handleAppt(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Priya Sharma" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98xxx xxxxx" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" required/>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <select>
+                <option>10:00 AM – 12:00 PM</option>
+                <option>12:00 PM – 2:00 PM</option>
+                <option>2:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 6:00 PM</option>
+                <option>6:00 PM – 8:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Purpose of Visit</label>
+            <select>
+              <option>Bridal Jewellery Shopping</option>
+              <option>Gold Jewellery</option>
+              <option>Diamond Collection</option>
+              <option>Custom Design</option>
+              <option>Old Gold Exchange</option>
+              <option>Men's Collection</option>
+              <option>General Browsing</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Special Requirements</label>
+            <textarea placeholder="Any specific designs in mind, budget range, or special occasion details..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;display:flex;align-items:center;gap:8px;">
+            Confirm Appointment ✨
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM FEED -->
+<section class="instagram-section section" id="instagram">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow" style="color:var(--gold);">Follow Our Journey</div>
+      <h2 class="section-title" style="color:#fff;">@mahalaxmi_jewellers_nagpur</h2>
+      <div class="divider-gold"></div>
+      <p class="section-desc" style="color:rgba(255,255,255,0.5);">Stay inspired with our latest designs, behind-the-scenes craftsmanship, and festive collections</p>
+    </div>
+    <div class="insta-grid fade-in">
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 342</span>
+          <span class="insta-meta">💬 28</span>
+        </div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 521</span>
+          <span class="insta-meta">💬 44</span>
+        </div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 893</span>
+          <span class="insta-meta">💬 67</span>
+        </div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 412</span>
+          <span class="insta-meta">💬 31</span>
+        </div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1573408301185-9519f94816b5?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 287</span>
+          <span class="insta-meta">💬 19</span>
+        </div>
+      </div>
+      <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400&q=80" alt="Instagram" class="insta-img"/>
+        <div class="insta-overlay">
+          <span class="insta-meta">❤️ 634</span>
+          <span class="insta-meta">💬 53</span>
+        </div>
+      </div>
+    </div>
+    <div class="insta-follow fade-in">
+      <p class="insta-handle">Join 12,000+ jewellery lovers following our story</p>
+      <a href="https://www.instagram.com/mahalaxmi_jewellers_nagpur" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;">
+        Follow on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section" id="contact">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Find Us</div>
+      <h2 class="section-title">Visit Our Showroom</h2>
+      <div class="divider-gold"></div>
+      <p class="section-desc">We'd love to welcome you. Our team is here Monday through Sunday, 10am to 8pm.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="fade-in">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <h4>Showroom Address</h4>
+              <p>Mahalaxmi Jewellers, Sitabuldi Main Road,<br/>Near Mahalaxmi Mata Mandir,<br/>Nagpur – 440012, Maharashtra</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <h4>Call Us</h4>
+              <a href="tel:+919876543210">+91 98765 43210</a><br/>
+              <a href="tel:+917123456789">+91 71234 56789</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">⏰</div>
+            <div class="contact-info-text">
+              <h4>Showroom Hours</h4>
+              <p>Monday – Sunday: 10:00 AM – 8:00 PM<br/>Open on all public holidays &amp; festivals</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-text">
+              <h4>Email Us</h4>
+              <a href="mailto:info@mahalaxmijewellers.com">info@mahalaxmijewellers.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Mahalaxmi+Jewellers+Nagpur&output=embed&z=15"
+            allowfullscreen=""
+            loading="lazy"
+            title="Mahalaxmi Jewellers Store Location"
+          ></iframe>
+        </div>
+      </div>
+      <div class="contact-form fade-in">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:8px;font-weight:400;">Send Us a Message</h3>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:32px;">We typically respond within a few hours</p>
+        <form onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full Name" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" placeholder="+91 xxxxx xxxxx"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select style="background:var(--ivory);border:1px solid rgba(201,168,76,0.2);color:var(--text-dark);padding:14px 18px;width:100%;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:14px;">
+              <option>Enquiry about Gold Jewellery</option>
+              <option>Diamond Collection Enquiry</option>
+              <option>Bridal Package Enquiry</option>
+              <option>Custom Design Request</option>
+              <option>Old Gold Exchange</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea placeholder="Tell us what you're looking for..." style="min-height:120px;background:var(--ivory);border:1px solid rgba(201,168,76,0.2);color:var(--text-dark);"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo-wrap" style="align-items:flex-start;">
+          <span class="logo-text" style="color:#fff;">MAHALAXMI</span>
+          <span class="logo-sub" style="color:var(--gold);">Jewellers · Est. 1985 · Nagpur</span>
+        </a>
+        <p style="margin-top:16px;">Nagpur's most trusted jewellers for over three decades. Crafting heirlooms with love, purity, and unmatched artisanship.</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="https://www.instagram.com/mahalaxmi_jewellers_nagpur" target="_blank" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://wa.me/919876543210" target="_blank" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="tel:+919876543210" class="social-link" aria-label="Phone">📞</a>
+          <a href="mailto:info@mahalaxmijewellers.com" class="social-link" aria-label="Email">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="#collections">Gold Jewellery</a></li>
+          <li><a href="#collections">Diamond Collection</a></li>
+          <li><a href="#collections">Bridal Sets</a></li>
+          <li><a href="#collections">Traditional Wear</a></li>
+          <li><a href="#collections">Daily Wear</a></li>
+          <li><a href="#collections">Men's Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="#">Old Gold Exchange</a></li>
+          <li><a href="#">Custom Design</a></li>
+          <li><a href="#">Jewellery Repair</a></li>
+          <li><a href="#">Lifetime Polishing</a></li>
+          <li><a href="#">EMI Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:info@mahalaxmijewellers.com">info@mahalaxmijewellers.com</a></li>
+          <li><a href="https://maps.app.goo.gl/axbHWYTkMUjHQXBP9" target="_blank">Get Directions →</a></li>
+          <li><a href="#">Mon–Sun: 10am – 8pm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Mahalaxmi Jewellers, Nagpur. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+      <div class="certifications">
+        <span class="cert-badge">BIS Hallmarked</span>
+        <span class="cert-badge">IGI Certified</span>
+        <span class="cert-badge">GIA Certified</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919876543210?text=Hi%20Mahalaxmi%20Jewellers!%20I%27d%20like%20to%20enquire%20about%20your%20jewellery%20collection." target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-tooltip">Chat with us!</span>
+  💬
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+
+<script>
+// --- DATE ---
+const now = new Date();
+const dateStr = now.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+document.getElementById('rate-date').textContent = dateStr;
+document.getElementById('rate-date2').textContent = dateStr;
+
+// --- NAVBAR SCROLL ---
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>80);
+  document.getElementById('scrollTop').classList.toggle('visible',window.scrollY>400);
+});
+
+// --- MOBILE NAV ---
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click',()=>mobileNav.classList.add('open'));
+document.getElementById('mobileClose').addEventListener('click',()=>mobileNav.classList.remove('open'));
+function closeMob(){mobileNav.classList.remove('open');}
+
+// --- THEME TOGGLE ---
+let dark = false;
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click',()=>{
+  dark = !dark;
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : '');
+  themeToggle.textContent = dark ? '🌙' : '☀️';
+});
+
+// --- PARTICLES ---
+const canvas = document.getElementById('particlesCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resizeCanvas(){
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+class Particle{
+  constructor(){this.reset();}
+  reset(){
+    this.x = Math.random()*canvas.width;
+    this.y = Math.random()*canvas.height;
+    this.size = Math.random()*2.5+0.5;
+    this.speedX = (Math.random()-0.5)*0.4;
+    this.speedY = -Math.random()*0.6-0.2;
+    this.opacity = Math.random()*0.6+0.1;
+    this.life = 1;
+  }
+  update(){
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.life -= 0.003;
+    if(this.life<=0||this.y<-10)this.reset();
+  }
+  draw(){
+    ctx.save();
+    ctx.globalAlpha = this.opacity*this.life;
+    ctx.fillStyle = '#C9A84C';
+    ctx.beginPath();
+    ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+for(let i=0;i<80;i++)particles.push(new Particle());
+function animateParticles(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{p.update();p.draw();});
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+// --- COUNTERS ---
+const counters = document.querySelectorAll('.counter');
+let counted = false;
+function animateCounters(){
+  if(counted)return;
+  const heroRect = document.querySelector('.hero-stats').getBoundingClientRect();
+  if(heroRect.top<window.innerHeight){
+    counted = true;
+    counters.forEach(counter=>{
+      const target = +counter.dataset.target;
+      let current = 0;
+      const inc = target/60;
+      const timer = setInterval(()=>{
+        current += inc;
+        if(current>=target){current=target;clearInterval(timer);}
+        counter.textContent = Math.floor(current);
+      },25);
+    });
+  }
+}
+window.addEventListener('scroll', animateCounters);
+animateCounters();
+
+// --- FADE IN OBSERVER ---
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');}
+  });
+},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+fadeEls.forEach(el=>observer.observe(el));
+
+// --- TESTIMONIALS SLIDER ---
+let currentSlide = 0;
+const track = document.getElementById('testimonialsTrack');
+const dots = document.querySelectorAll('.dot');
+function goToSlide(n){
+  currentSlide = n;
+  track.style.transform = `translateX(-${n*100}%)`;
+  dots.forEach((d,i)=>d.classList.toggle('active',i===n));
+}
+function nextSlide(){goToSlide((currentSlide+1)%4);}
+function prevSlide(){goToSlide((currentSlide+3)%4);}
+setInterval(nextSlide, 5000);
+
+// --- GALLERY FILTER ---
+function filterGallery(btn, cat){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const items = document.querySelectorAll('#galleryGrid .gallery-item');
+  items.forEach(item=>{
+    const show = cat==='all'||item.dataset.cat===cat;
+    item.style.display = show ? 'block' : 'none';
+    item.style.opacity = '0';
+    if(show)setTimeout(()=>{item.style.opacity='1';item.style.transition='opacity 0.4s';},50);
+  });
+}
+
+// --- LIGHTBOX ---
+const lightboxImgs = [
+  'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&q=90',
+  'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1200&q=90',
+  'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&q=90',
+  'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=1200&q=90',
+  'https://images.unsplash.com/photo-1573408301185-9519f94816b5?w=1200&q=90',
+  'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1200&q=90',
+  'https://images.unsplash.com/photo-1631699815493-1e4e27e5ba96?w=1200&q=90',
+  'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1200&q=90',
+];
+let currentLb = 0;
+function openLightbox(idx){
+  currentLb = idx;
+  document.getElementById('lightboxImg').src = lightboxImgs[idx];
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function changeLightbox(dir){
+  currentLb = (currentLb+dir+lightboxImgs.length)%lightboxImgs.length;
+  document.getElementById('lightboxImg').src = lightboxImgs[currentLb];
+}
+document.getElementById('lightbox').addEventListener('click',function(e){
+  if(e.target===this)closeLightbox();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowRight')changeLightbox(1);
+  if(e.key==='ArrowLeft')changeLightbox(-1);
+});
+
+// --- FORM HANDLERS ---
+function handleAppt(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.textContent = '✅ Appointment Confirmed! We\'ll call you shortly.';
+  btn.style.background = 'linear-gradient(135deg,#2d7a4f,#1a5c38)';
+  setTimeout(()=>{
+    btn.textContent = 'Confirm Appointment ✨';
+    btn.style.background = '';
+    e.target.reset();
+  },4000);
+}
+function handleContact(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.textContent = '✅ Message Sent! We\'ll respond soon.';
+  btn.style.background = 'linear-gradient(135deg,#2d7a4f,#1a5c38)';
+  setTimeout(()=>{
+    btn.textContent = 'Send Message →';
+    btn.style.background = '';
+    e.target.reset();
+  },4000);
+}
+
+// --- SMOOTH PARALLAX HERO ---
+window.addEventListener('scroll',()=>{
+  const scrolled = window.pageYOffset;
+  const heroBg = document.querySelector('.hero-bg');
+  if(heroBg&&scrolled<window.innerHeight){
+    heroBg.style.transform = `translateY(${scrolled*0.3}px)`;
+  }
+});
+</script>
+</body>
+</html>
